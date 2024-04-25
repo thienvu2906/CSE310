@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 15px;
+	font-family: "Open Sans",sans-serif;
+	line-height: 26px;
+	font-weight: 300;
+	color: #656565;
+	overflow-x: hidden!important;
+	-webkit-font-smoothing: antialiased;
+}
+.slider {
+	position: relative;
+}
+.slide img{
+	height: 720px;
+}
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	width: 150px;
+}
+.menu {
+	position: absolute;
+	top: 20px;
+	left: 700px;
+}
+.menu ul{
+	display: flex;
+	list-style-type: none;
+}
+.menu ul li {
+	list-style: none;
+	margin: 30px;
+}
+.menu ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+.menu ul li a:hover {
+	border-bottom: 2px solid white;
+	transition: all 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		display: none;
+	}
+	#main-menu {
+		flex-direction: column;
+		margin-left: -700px!important;
+		background-color: black;
+
+	}
+	.menu {
+		top: 0;
+		width: 100%;
+	}
+	.slider{
+		width: 100%;
+	}
+}
+/*intro,about,shopping*/
+.introduce,.about,.shopping {
+	text-align: center;
+	padding: 70px 30px;
+	height: 700px;
+}
+.introduce-header-img,.about-header-img,.shopping-header-img {
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+.introduce-header-text,.about-header-text,.shopping-header-text {
+	margin-bottom: 30px;
+}
+.introduce-body-img {
+	width: 150px;
+	margin-top: 50px;
+}
+.col-3 a,.col-4 a {
+	color: black;
+}
+.col-3 a:hover,.col-4 a:hover {
+	text-decoration: none;
+	color: #C3A484;
+}
+.about {
+	background-image: url(image/banner5.jpg);
+	height: 800px;
+}
+.about-body img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.about-body {
+	text-align: left;
+}
+.about-body-title {
+	font-size: 20px;
+	margin-top: 50px!important;
+	margin-bottom: 15px;
+}
+.about-body-read-more {
+	display: flex;
+}
+.about-body-read-more hr {
+	border: 1px solid black;
+	width: 10px;
+}
+.shopping-body-img {
+	position: relative;
+}
+
+.shopping-body-img img {
+	width: 100%;
+}
+
+.shopping-body-img button {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	display: none;
+	z-index: 1;
+	color: #fff;
+	background-color: #be9c79;
+	border: 1px solid transparent;
+	width: 160px;
+	height: 50px;
+}
+
+.shopping-body-img:hover button {
+	display: block;
+	transition: 0.5s;
+}
+.shopping-body-img:hover img {
+	opacity: 0.3;
+	transition: 0.5s;
+}
